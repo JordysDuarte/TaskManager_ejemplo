@@ -1,0 +1,143 @@
+ ==========================================
+# MINITASK - GITIGNORE
+# ASP.NET Core | Clean Architecture
+# SQL Server | Visual Studio | JavaScript
+# ==========================================
+
+
+# ==========================================
+# 1. VISUAL STUDIO
+# ==========================================
+
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+
+# ==========================================
+# 2. COMPILACIONES .NET
+# ==========================================
+
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+artifacts/
+publish/
+*.publishsettings
+*.pubxml.user
+
+
+# ==========================================
+# 3. PAQUETES Y ARCHIVOS NUGET
+# ==========================================
+
+packages/
+*.nupkg
+*.snupkg
+.nuget/packages/
+
+
+# ==========================================
+# 4. CONFIGURACIONES LOCALES Y SECRETOS
+# ==========================================
+
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+secrets.json
+
+.env
+.env.*
+!.env.example
+
+*.pfx
+*.p12
+*.key
+*.pem
+
+
+# ==========================================
+# 5. ARCHIVOS LOCALES DE SQL SERVER
+# ==========================================
+
+*.mdf
+*.ndf
+*.ldf
+
+*.bak
+*.trn
+*.bacpac
+*.dacpac
+
+
+# ==========================================
+# 6. LOGS Y ARCHIVOS TEMPORALES
+# ==========================================
+
+*.log
+logs/
+Logs/
+
+*.tmp
+*.temp
+*.cache
+
+*.bak.tmp
+
+
+# ==========================================
+# 7. PRUEBAS Y COBERTURA
+# ==========================================
+
+TestResults/
+coverage/
+coverage.xml
+*.coverage
+*.coveragexml
+
+
+# ==========================================
+# 8. JAVASCRIPT / NODE (SI SE UTILIZA)
+# ==========================================
+
+node_modules/
+dist/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ==========================================
+# 9. EDITORES ADICIONALES
+# ==========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# ==========================================
+# 10. ARCHIVOS DEL SISTEMA OPERATIVO
+# ==========================================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+
+# ==========================================
+# 11. ARCHIVOS DE BACKUP DEL EDITOR
+# ==========================================
+
+*~
+*.orig
+*.rej

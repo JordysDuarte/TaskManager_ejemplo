@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskManagerPrueba.Application.Services
 {
-    internal interface TareaService
+    internal class TareaService
     {
     }
 }

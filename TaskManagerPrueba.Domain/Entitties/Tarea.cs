@@ -8,7 +8,7 @@ namespace TaskManagerPrueba.Domain.Entitties
 {
 	public sealed class Tarea
 	{
-		//Definimos los campos de la tabla de la base de datos
+	
 		public int Id { get; private set; }
 		public string Titulo { get; private set; }
 		public bool Completada { get; private set; }

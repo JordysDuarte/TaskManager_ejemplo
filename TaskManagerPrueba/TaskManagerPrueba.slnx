@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="../TaskManagerPrueba.Application/TaskManagerPrueba.Application.csproj" />
+  <Project Path="../TaskManagerPrueba.Domain/TaskManagerPrueba.Domain.csproj" />
+  <Project Path="../TaskManagerPrueba.Infrastructure/TaskManagerPrueba.Infrastructure.csproj" />
   <Project Path="TaskManagerPrueba.csproj" />
 </Solution>

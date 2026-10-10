@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskManagerPrueba.Application\TaskManagerPrueba.Application.csproj" />
+    <ProjectReference Include="..\TaskManagerPrueba.Domain\TaskManagerPrueba.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

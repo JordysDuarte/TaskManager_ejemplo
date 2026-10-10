@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TaskManager | Gestor de tareas</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="encabezado-contenido">
+            <h1>TaskManager</h1>
+            <span>Gestor de tareas</span>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="bienvenida">
+            <h2>Mis tareas</h2>
+            <p>
+                Organiza tus actividades
+                de manera sencilla.
+            </p>
+        </section>
+
+        <!-- CONTADORES -->
+        <section class="estadisticas"
+                 aria-label="Resumen de tareas">
+
+            <article class="estadistica">
+                <span>Total</span>
+                <strong id="totalTareas">0</strong>
+            </article>
+
+            <article class="estadistica">
+                <span>Pendientes</span>
+                <strong id="totalPendientes">0</strong>
+            </article>
+
+            <article class="estadistica">
+                <span>Completadas</span>
+                <strong id="totalCompletadas">0</strong>
+            </article>
+
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="tarjeta">
+
+            <h3>Registrar nueva tarea</h3>
+
+            <form id="formTarea">
+
+                <label for="tituloTarea">
+                    Título de la tarea
+                </label>
+
+                <div class="formulario-contenido">
+
+                    <input
+                        id="tituloTarea"
+                        name="titulo"
+                        type="text"
+                        placeholder="Escribe una nueva tarea..."
+                        maxlength="120"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        id="btnAgregar"
+                        class="btn btn-primario">
+                        + Agregar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- LISTADO -->
+        <section class="tarjeta">
+
+            <div class="listado-encabezado">
+
+                <h3>Listado de tareas</h3>
+
+                <div class="filtros"
+                     aria-label="Filtrar tareas">
+
+                    <button type="button"
+                            class="filtro activo"
+                            data-filtro="todas"
+                            aria-pressed="true">
+                        Todas
+                    </button>
+
+                    <button type="button"
+                            class="filtro"
+                            data-filtro="pendientes"
+                            aria-pressed="false">
+                        Pendientes
+                    </button>
+
+                    <button type="button"
+                            class="filtro"
+                            data-filtro="completadas"
+                            aria-pressed="false">
+                        Completadas
+                    </button>
+
+                </div>
+
+            </div>
+
+            <ul id="listaTareas"
+                class="lista-tareas"
+                aria-label="Tareas registradas">
+
+                <li class="estado-vacio">
+                    Cargando tareas...
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- MENSAJES DE OPERACIONES -->
+        <p id="mensajeSistema"
+           class="mensaje"
+           role="status"
+           aria-live="polite"></p>
+
+    </main>
+
+</body>
+</html>

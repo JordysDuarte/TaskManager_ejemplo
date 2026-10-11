@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskManagerPrueba.Application.DTOs
 {
-    internal class CrearTareaDto
-    {
-    }
+	public sealed record CrearTareaDto(
+			string? Titulo
+		);
 }

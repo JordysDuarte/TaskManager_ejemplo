@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace TaskManagerPrueba.Application.DTOs
 {
-    internal class TareaDto
-    {
-    }
+	public sealed record TareaDto(
+			int Id,
+			string Titulo,
+			bool Completada
+		);
 }

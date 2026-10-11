@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskManagerPrueba.Application.DTOs
 {
-    internal class CambiarEstadoDto
-    {
-    }
+	public sealed record CambiarEstadoDto(
+		   [property: JsonRequired] bool Completada
+		);
 }

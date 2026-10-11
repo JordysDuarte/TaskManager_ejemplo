@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskManagerPrueba.Infrastructure.Persistence
 {
-    internal class TareaRepository
+    public class TareaRepository
     {
     }
 }

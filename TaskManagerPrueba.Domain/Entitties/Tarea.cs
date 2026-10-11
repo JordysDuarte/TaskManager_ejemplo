@@ -8,7 +8,7 @@ namespace TaskManagerPrueba.Domain.Entitties
 {
 	public sealed class Tarea
 	{
-	
+
 		public int Id { get; private set; }
 		public string Titulo { get; private set; }
 		public bool Completada { get; private set; }
@@ -46,3 +46,4 @@ namespace TaskManagerPrueba.Domain.Entitties
 		}
 
 	}
+}
